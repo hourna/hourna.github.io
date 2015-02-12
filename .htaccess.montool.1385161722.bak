@@ -1,0 +1,31 @@
+#BEGIN HG BLOCK
+# The following configuration has been set by your hosting provider,
+# and has been put in place for the benefit of the server.
+#
+# Any modification or removal by non-authorized individuals may
+# result in corrective action.
+#
+# If you have any questions you may contact your provider for information.
+order deny,allow
+allow from 74.202.255.240/29 # Administrative
+allow from 216.110.94.224/27 # Administrative
+allow from 173.11.193.20/29 # Administrative
+allow from 50.97.105.36 # Administrative
+allow from 216.110.94.176/28 # Administrative
+allow from 175.107.133.185 # GTMetrix
+allow from 217.27.250.160 # GTMetrix
+allow from 74.86.15.72 # GTMetrix
+allow from 204.187.12.90 # GTMetrix
+allow from 204.187.14.75 # GTMetrix
+allow from 204.187.14.73 # GTMetrix
+allow from 180.149.241.242 # GTMetrix
+allow from 204.187.14.74 # GTMetrix
+allow from 199.187.122.67 # ManageWP.com
+allow from 199.187.122.66 # ManageWP.com
+allow from 78.46.70.238 # ManageWP.com
+allow from 192.185.83.244 # sclass.websitewelcome.com
+deny from all
+#END HG BLOCK
+
+RewriteOptions inherit
+
