@@ -86,7 +86,7 @@
     .form-all{
         width:690px;
         color:#555 !important;
-        font-family:"Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Verdana, sans-serif;
+        font-family:'Arial';
         font-size:14px;
     }
     .form-radio-item label, .form-checkbox-item label, .form-grading-label, .form-header{
@@ -98,10 +98,12 @@
 <style type="text/css" id="form-designer-style">
     /* Injected CSS Code */
 .form-all {
-  font-family: "Lucida Grande", sans-serif;
+  font-family: "Arial", sans-serif;
 }
 .form-all {
   width: 690px;
+  width: 100%;
+  max-width: 690px;
 }
 .form-label-left,
 .form-label-right {
@@ -206,11 +208,11 @@
 .form-label-left,
 .form-label-right,
 .form-html {
-  color: #000000;
+  color: #593838;
 }
 .form-checkbox-item label,
 .form-radio-item label {
-  color: #1a1a1a;
+  color: #784c4c;
 }
 .form-line.form-line-active {
   -webkit-transition-property: all;
@@ -276,13 +278,28 @@
 .form-line {
   padding: 12px 36px;
 }
+.form-all {
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+}
+.form-section:first-child {
+  -webkit-border-radius: 20px 20px 0 0;
+  -moz-border-radius: 20px 20px 0 0;
+  border-radius: 20px 20px 0 0;
+}
+.form-section:last-child {
+  -webkit-border-radius: 0 0 20px 20px;
+  -moz-border-radius: 0 0 20px 20px;
+  border-radius: 0 0 20px 20px;
+}
 .form-all .qq-upload-button,
 .form-all .form-submit-button,
 .form-all .form-submit-reset,
 .form-all .form-submit-print {
   font-size: 1em;
   padding: 9px 15px;
-  font-family: "Lucida Grande", sans-serif;
+  font-family: "Arial", sans-serif;
   font-size: 14px;
   font-weight: normal;
 }
@@ -290,7 +307,7 @@
 .form-all .form-pagebreak-next {
   font-size: 1em;
   padding: 9px 15px;
-  font-family: "Lucida Grande", sans-serif;
+  font-family: "Arial", sans-serif;
   font-size: 14px;
   font-weight: normal;
 }
@@ -321,10 +338,10 @@ h2 ~ .form-subHeader {
   padding: 4px 3px 2px 3px;
 }
 .form-header-group {
-  font-family: "Lucida Grande", sans-serif;
+  font-family: "Arial", sans-serif;
 }
 .form-section {
-  padding: 0px 0px 0px 0px;
+  padding: 0px 400px 0px 400px;
 }
 .form-header-group {
   margin: 12px 36px 12px 36px;
@@ -349,7 +366,7 @@ h2 ~ .form-subHeader {
   width: 150px;
 }
 .form-label {
-  font-family: "Lucida Grande", sans-serif;
+  font-family: "Arial", sans-serif;
 }
 li[data-type="control_image"] div {
   text-align: left;
