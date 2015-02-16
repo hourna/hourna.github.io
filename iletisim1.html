@@ -147,8 +147,8 @@
   font-weight: normal;
 }
 .supernova {
-  background-color: none;
   background-color: #ffffff;
+  background-color: #fafafa;
 }
 .supernova body {
   background-color: transparent;
@@ -159,6 +159,14 @@
 @width90: (unit(@formWidth, px)+ 180px);
 */
 /* | */
+@media screen and (min-width: 480px) {
+  .supernova .form-all {
+    border: 1px solid #e1e1e1;
+    -webkit-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 3px 9px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 3px 9px rgba(0, 0, 0, 0.1);
+  }
+}
 /* | */
 /* | */
 @media screen and (max-width: 480px) {
@@ -189,30 +197,39 @@
 }
 /* | */
 .form-all {
-  background-color: none;
+  background-color: #ffffff;
   border: 1px solid transparent;
 }
+.form-header-group {
+  border-color: #e6e6e6;
+}
+.form-matrix-table tr {
+  border-color: #e6e6e6;
+}
+.form-matrix-table tr:nth-child(2n) {
+  background-color: #f2f2f2;
+}
 .form-all {
-  color: #000000;
+  color: #555555;
 }
 .form-header-group .form-header {
-  color: #000000;
+  color: #555555;
 }
 .form-header-group .form-subHeader {
-  color: #1a1a1a;
+  color: #6f6f6f;
 }
 .form-sub-label {
-  color: #1a1a1a;
+  color: #6f6f6f;
 }
 .form-label-top,
 .form-label-left,
 .form-label-right,
 .form-html {
-  color: #593838;
+  color: #555555;
 }
 .form-checkbox-item label,
 .form-radio-item label {
-  color: #784c4c;
+  color: #6f6f6f;
 }
 .form-line.form-line-active {
   -webkit-transition-property: all;
@@ -230,7 +247,7 @@
   -ms-transition-timing-function: ease;
   -o-transition-timing-function: ease;
   transition-timing-function: ease;
-  background-color: inherit;
+  background-color: #ffffe0;
 }
 /* ömer */
 .form-radio-item,
@@ -341,7 +358,7 @@ h2 ~ .form-subHeader {
   font-family: "Arial", sans-serif;
 }
 .form-section {
-  padding: 0px 400px 0px 400px;
+  padding: 0px 0px 0px 0px;
 }
 .form-header-group {
   margin: 12px 36px 12px 36px;
@@ -359,7 +376,7 @@ h2 ~ .form-subHeader {
 .form-checkbox-other-input,
 .form-captcha input,
 .form-spinner input {
-  background-color: ;
+  background-color: #ffffff;
 }
 [data-type="control_dropdown"] .form-input,
 [data-type="control_dropdown"] .form-input-wide {
@@ -397,7 +414,7 @@ li[data-type="control_image"] img {
   -ms-transition-timing-function: ease;
   -o-transition-timing-function: ease;
   transition-timing-function: ease;
-  background-color: inherit;
+  background-color: #fff4f4;
 }
 .form-line-error .form-error-message {
   background-color: #f8f8f8;
@@ -579,6 +596,7 @@ li[data-type="control_image"] img {
   document.getElementById("si" + "mple" + "_spc").value = "50453351853352-50453351853352";
   </script>
 </form>
+
 	<div class="container">
 
 		</div>
